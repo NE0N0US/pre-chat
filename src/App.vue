@@ -48,7 +48,7 @@
 					<div class="fit relative-position">
 						<q-btn class="all-pointer-events" fab icon="mdi-forum-plus" unelevated
 						color="primary" text-color="background" :ripple="RIPPLE" @pointerdown.passive.stop
-						@mousedown.passive.stop @click.passive="Chats.createChat().then(() => drawer$ = false)"/>
+						@mousedown.passive.stop @click.passive="Chats.createChat().then(chat => drawer$ = !chat)"/>
 					</div>
 				</div>
 			</div>

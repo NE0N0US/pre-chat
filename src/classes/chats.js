@@ -114,6 +114,7 @@ export default class Chats{
 			UiUtils.notify('Chat created')
 			if(open)
 				await this.openChat(chat)
+			return chat
 		}
 		catch(error){
 			UiUtils.notify('Error creating chat', 'error')
@@ -136,6 +137,7 @@ export default class Chats{
 			if(this.chat$.value === chat)
 				await this.openChat(undefined)
 			UiUtils.notify('Chat deleted')
+			return true
 		}
 		catch(error){
 			UiUtils.notify('Error deleting chat', 'error')
