@@ -19,7 +19,7 @@ module.exports = configure(() => {
 			open: false
 		},
 		build: {
-			distDir: 'out',
+			distDir: 'pre-chat',
 			publicPath: '/pre-chat',
 			useFilenameHashes: false,
 			minify: true,
